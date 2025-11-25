@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="icon/home.ico">
+  <title>学習サイトトップ</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #f0f4f8, #fdeff2);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header.header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 30px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header.header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .btn-container {
+      margin: 30px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1em 3em;
+      margin: 10px;
+      border-radius: 50px;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .btn:active {
+      transform: translateY(5px);
+      box-shadow: none;
+    }
+
+    .science {
+      background-color: #4caf50;
+      box-shadow: 0 5px 0 #2e7d32;
+    }
+
+    .math {
+      background-color: #2196f3;
+      box-shadow: 0 5px 0 #0d47a1;
+    }
+
+    .japanese {
+      background-color: #e91e63;
+      box-shadow: 0 5px 0 #880e4f;
+    }
+
+    .social {
+      background-color: #ff9800;
+      box-shadow: 0 5px 0 #f57c00;
+    }
+
+    .english {
+      background-color: #7700ff;
+      box-shadow: 0 5px 0 #33086e;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 25px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      color: #222;
+      font-size: 1.6em;
+    }
+
+    .year {
+      font-weight: bold;
+      padding-top: 20px;
+      font-size: 30px;
+    }
+
+    .intro p {
+      margin: 10px 0;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .fa-flask-vial {
+      color: #4caf50;
+      font-weight: bold;
+      margin-right: 3px;
+    }
+
+    .sp {
+      color: #4caf50;
+      margin-right: 3px;
+    }
+
+    .fa-calculator {
+      color: #2196f3;
+      font-weight: bold;
+      padding: 5px
+    }
+
+    .mp {
+      color: #2196f3;
+      margin-right: 3px;
+    }
+
+    .fa-language {
+      color: #e91e63;
+      font-weight: bold;
+      padding: 5px
+    }
+
+    .jp {
+      color: #e91e63;
+      margin-right: 3px;
+    }
+
+    .fa-earth-americas {
+      color: #ff9800;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .ssp {
+      color: #ff9800;
+      margin-right: 3px;
+    }
+
+    .fa-a {
+      color: #7700ff;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .ep {
+      color: #7700ff;
+      margin-right: 3px;
+    }
+
+    .fa-landmark-dome {
+      color: #ff9800;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .hp {
+      color: #ff9800;
+      margin-right: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>学習サイトへようこそ</h1>
+  </header>
+
+  <div class="year">２年生</div>
+
+  <div class="btn-container">
+    <a href="science/science.html" class="btn science">理科</a>
+    <a href="math/math.html" class="btn math">数学</a>
+    <a href="japanese/japanese.html" class="btn japanese">国語</a>
+    <a href="geography/geography.html" class="btn social">地理</a>
+    <a href="history/history.html" class="btn social">歴史</a>
+    <a href="english/english.html" class="btn english">英語</a>
+  </div>
+
+  <div class="intro">
+    <h2>サイトの紹介</h2>
+    <p>このサイトは、運営者が違うデバイス間で使うために作成されたものです。</p>
+    <p class="last_p">この学習サイトでは、
+      <i class="fa-solid fa-flask-vial"></i><span class="sp">理科</span>
+      <i class="fa-solid fa-calculator"></i><span class="mp">数学</span>
+      <i class="fa-solid fa-language"></i><span class="jp">国語</span>
+      <i class="fa-solid fa-earth-americas"></i><span class="ssp">地理</span>
+      <i class="fa-solid fa-landmark-dome"></i><span class="hp">歴史</span>
+      <i class="fa-solid fa-a"></i><span class="ep">英語</span>があります。
+    </p>
+    <p>そのうち、技能教科も追加されるかも？...</p>
+  </div>
+</body>
+
+</html>
