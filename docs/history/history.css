@@ -1,0 +1,349 @@
+body {
+    font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+    background: #fdf6f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #e9a21e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+/* メインを左、サイドバーを右に */
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.main-content h2 {
+    color: #e9a21e;
+    margin-top: 0;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+}
+
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    padding-bottom: 2px;
+    border-bottom: 2px #ff9800 solid;
+}
+
+/* 右サイドバー */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #e9a21e;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.sidebar2 {
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+/* トップへ戻る */
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #2196f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #0d47a1;
+}
+
+.toc-002 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.toc-002 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #2589d0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.toc-002 div::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 4H21V6H8V4ZM3 3.5H6V6.5H3V3.5ZM3 10.5H6V13.5H3V10.5ZM3 17.5H6V20.5H3V17.5ZM8 11H21V13H8V11ZM8 18H21V20H8V18Z' fill='%23fff'%3E%3C/path%3E%3C/svg%3E");
+    content: '';
+}
+
+/* スマホ対応：縦並びに */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.words-title {
+    color: #ff9800;
+    padding-left: 5px;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.sub-content {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.box-018 {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em calc(1.5em + 9px);
+    border-top: 1px solid #ff9800;
+    border-bottom: 1px solid #ff9800;
+    color: #333;
+    margin-top: 5px;
+}
+
+.box-018::before,
+.box-018::after {
+    position: absolute;
+    width: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(100% + 20px);
+    background-color: #ff9800;
+    content: '';
+}
+
+.box-018::before {
+    left: 9px;
+}
+
+.box-018::after {
+    right: 9px;
+}
+
+.cycle {
+    color: black;
+}
+
+.marker {
+    background-color: #ff9;
+}
+
+.waveline {
+    text-decoration: #f00 wavy underline;
+}
+
+.term {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.term .word {
+    display: inline-block;
+    flex: 0 0 auto;
+    /* ← 必須：内容に合わせて幅が決まる */
+    padding-right: 30px;
+    color: red;
+    position: relative;
+}
+
+/* ••• を自動で表示 */
+.term .word::after {
+    content: "•••";
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #333;
+}
+
+/* 説明文は自由に伸びる */
+.term .desc {
+    flex: 1;
+}
+
+.footer-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 10px 10px;
+    background-color: #2589d0;
+}
+
+.footer-2__logo {
+    width: 130px;
+    height: 30px;
+}
+
+.footer-2__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style-type: none;
+    margin: 0 0 .5em;
+    padding: .5em;
+}
+
+.footer-2__sns-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.footer-2__copyright {
+    margin: 0;
+    color: #ffffffb3;
+    font-weight: 200;
+    font-size: .8em;
+}
+
+.revolution-wrapper {
+    margin-top: 40px
+}
+
+/* 年表の1行 */
+.timeline-item {
+    display: flex;
+    padding: 12px 0;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+/* 左：年代 */
+.timeline-item .year {
+    width: 120px;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 15px;
+    position: relative;
+}
+
+/* ◀ この部分が年代と出来事の間に縦線を作る */
+.timeline-item .year::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-right: 2px solid #aaa;  /* ← 太さ・色はここで調整可能 */
+}
+
+/* 右：出来事 */
+.timeline-item .event {
+    flex: 1;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* タイトル（ピューリタン革命） */
+.timeline-item .event-title {
+    color: #e9a21e;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* 説明文（•••付き） */
+.timeline-item .event-desc {
+    margin: 0;
+    padding-left: 28px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.timeline-item .event-desc::before {
+    content: "•••";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #555;
+}
